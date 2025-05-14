@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link href="styles.css" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body >
+        <div class="overlay | hidden "></div>
+        <nav class="nav | ">
+            <a href="US1 Accueil.html"> <img src="img\electric-vehicle_17165746.png" class="imglogo" alt="logo EcoRide" >
+            </a> 
+         <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+
+
+
+         <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Fonctionnalité du menu burger
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+                    
+    // Fonctionnalité pour les dropdowns en version mobile
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+                
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            // Vérifier si on est en version mobile
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                // Trouver le parent dropdown
+                const parentDropdown = this.closest('.dropdown');
+                parentDropdown.classList.toggle('active');
+            }
+        }); 
+    });
+                
+    // Fermeture du menu lors d'un clic sur un lien 
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            burgerMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+            
+            // Réinitialiser tous les dropdowns
+            const allDropdowns = document.querySelectorAll('.dropdown');
+        
+           allDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });     
+        });
+    }); 
+
+    // Fermer le menu lors d'un clic à l'extérieur
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            const isClickInsideNav = e.target.closest('nav');
+            const isClickOnBurger = e.target.closest('.burger-menu');
+            const isClickOnDropdownToggle = e.target.closest('.dropdown-toggle');
+        
+            if (!isClickInsideNav && !isClickOnBurger && navMenu.classList.contains('active') && !isClickOnDropdownToggle) {
+                navMenu.classList.remove('active');
+                burgerMenu.classList.remove('active');
+            }
+        }       
+    });
+        
+    // Réinitialiser lors du redimensionnement de la fenêtre
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+            burgerMenu.classList.remove('active');
+                
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            }); 
+        }
+    });
+});
+</script>
+
+            
+                    <ul class="nav-links" id="nav-links">
+                   <a href="US1 Accueil.html" >Accueil</a>
+                  <a href="Vue covoiturages.html" >Covoiturages</a>
+                  <a href="contact.html" >Contact</a>
+                 <a href="login.html">
+                 <button class="button">Connexion</button>
+                  </a>
+                </ul>
+                </nav>
+
+        
+        <header class="header" style="background-image: url('img/petr-magera-8czDAmtXdfs-unsplash.jpg');  height:450px; background-repeat: no-repeat" >
+
+            <h1 style="color:rgb(255, 255, 255)">EcoRide</h1>
+            <h3 style="color:rgb(255, 255, 255)">Votre sécurité, notre objectif</h3>
+        </header>
+      <main class="main01">    
+    <form class="form1" id="form-recherche" action="US1 Accueil.html" method="GET">
+      <div>
+        <input type="text" name="depart" id="depart-input" list="depart-suggestions" placeholder="Départ" class="depart" value>
+        <datalist id="depart-suggestions">
+            <option value="Paris"></option>
+            <option value="Nîmes"></option>
+            <option value="Nice"></option>
+            <option value="Marseille"></option>
+            <option value="Lyon"></option>
+            <option value="Caen"></option>
+            <option value="Toulouses"></option>
+            <option value="Grenoble"></option>
+            <option value="Strasbourg"></option>
+            <option value="Toulon"></option>
+            <option value="Nantes"></option>
+            <option value="Montpellier"></option>
+            <option value="Bordeaux"></option>
+            <option value="Annecy"></option>
+            <option value="Lille"></option>
+            <option value="Valence"></option>
+            </datalist>
+
+            
+        <input type="text" name="destination" id="destination-input" list="destination-suggestions" placeholder="Destination" class="destination" value>
+                  <datalist id="destination-suggestions">
+                      <option value="Paris"></option>
+                      <option value="Nîmes"></option>
+                      <option value="Nice"></option>
+                      <option value="Marseille"></option>
+                      <option value="Lyon"></option>
+                      <option value="Caen"></option>
+                      <option value="Toulouses"></option>
+                      <option value="Grenoble"></option>
+                      <option value="Strasbourg"></option>
+                      <option value="Toulon"></option>
+                      <option value="Nantes"></option>
+                      <option value="Montpellier"></option>
+                      <option value="Bordeaux"></option>
+                      <option value="Annecy"></option>
+                      <option value="Lille"></option>
+                      <option value="Valence"></option>
+                      </datalist>
+        <input type="date" name="date" placeholder="Aujourd'hui" class="date" value >
+        <input type="number" name="passagers" id="nombre-passagers" min="1" placeholder="nombre de passagers" class="nombre-passagers" value >
+</div>
+<a href="Vue detail.php">
+    <input type="button" value="Rechercher" class="button_rechercher" >
+</a>
+    </form>
+
+</main>
+<section class="section | trajets padding">
+    <img src="img\covoiturage-Adobe-web.jpeg"  >
+    <div class="section-text">
+        <b>
+        <h2 class="larger">Vos trajets préférés à petits prix</h2>
+    </b>
+        <p>
+            Où que vous alliez, EcoRide vous fournit le trajet idéal parmi notre large choix de destination à petits prix, Facile d'utilisation et dotée de technologies avancées, 
+            notre appli vous permet de réserver un trajet à proximité en un rien de temps.
+        </p>
+    </div>
+
+</section>
+<section class="section | covoiturages padding">
+    <img src="img\Packa_ratt.jpg" >
+    <div class="section-text">
+        <b>
+        <h2> Voyagez en toute confiance</h2>
+    </b>
+        <p>
+À l’heure où la transition écologique est au cœur des préoccupations,
+EcoRide s’impose comme une solution ingénieuse pour réduire l’impact environnemental de vos déplacements quotidiens. 
+Nous vérifions les avis, les profils et les pièces d’identité.
+ Vous savez donc avec qui vous allez voyager pour réserver en toute confiance sur notre plateforme sécurisée.
+        </p>
+    
+<a href="Vue covoiturages.html">
+   
+    <button class="button">Covoiturages</button>
+
+</a>
+
+    
+</section>
+
+<hr>
+        <footer class="footer ">
+        
+            <p>EcoRide@covoiturage.fr</p>
+              <a href="https://blog.EcoRide.fr/about-us/terms-and-condition" target="-blank" class="link">Mentions Legales</a>
+        </footer>
+</hr>
+<script src="https://code.jqueries.com/jqueries-3.2.1.slim.min.js"></script>
+    <script src = "scripts/app.js"></script>
+</body>
+</html>
