@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Espace-Utilisateur</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1025px)" href="styles-tablet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+      <div class="overlay | hidden "></div>
+<nav class="nav | ">
+    <a href="index.html"> 
+        <img src="img\electric-vehicle_17165746.png" class="imglogo" alt="logo EcoRide" >
+    </a>
+    <!--hamberguer menu--> 
+    <button class="mobil-open-modal">
+        <span>
+            <img src="img\list_12227852.png" alt="open Menu">
+        </span>
+    </button>
+<!--nav list-->
+<div class="nav-links">
+<ul class="nav-links" id="nav-links">
+<a href="index.html" >Accueil</a>
+  <a href="vue_covoiturages.html" >Covoiturages</a>
+    <a href="contact.html" >Contact</a>
+    <a href="login.html">
+    <button class="button">Connexion</button>
+    </a>
+</ul>
+
+ <div class="menu_button">
+<button id="menu-toggle" class="menu-button">☰</button>
+    <nav id="menu2" class="menu2">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="vue_covoiturages.html">Covoiturages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Connexion</a></li>
+        <li>
+        <form action="verification.php" method="post">
+        <a href="login.html">Déconnecter</a></li>
+        </form>
+      </ul>
+    </nav>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu2");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("open");
+  });
+});
+
+</script>
+
+
+
+</div>
+</nav>
+
+ 
+
+
+<!--menu-->
+<div class="menu | hidden">
+    <button>
+        <span calss="mobil-close-model">
+            <img src="img\letter-x_5584845.png" alt="Close Menu">
+        </span>
+    </button>
+    <div class="mobile-nav-links">
+<ul class="mobile-nav-links">
+    <a href="index.html" >Accueil</a>
+    <a href="vue_covoiturages.html" >Covoiturages</a>
+    <a href="contact.html" >Contact</a>
+    <a href="login.html">
+    <button class="button">Connexion</button>
+    </a>
+</ul>
+
+</div>
+</div>
+
+  <header>
+    <div class="conducteur">
+                   
+      <div class="conducteur-info">
+                    <img src="img\profile-picture_12225881.png" alt="photo de profil" class="conducteur-photo">
+                    <div class="profil-vérifier">
+                    <img src="img\shield_11735080.png" alt="photo de profil" class="profil-vérifier">
+    
+                  </div>
+                      <span class="conducteur-photo">profil vérifié</span>
+                      <div class="conducteur-info">
+                        <p>jean 35 ans</p>
+                      </div> 
+                      
+                      <div class="avis">
+                        
+                        <p>4,8/5 - 5 avis </p>  
+                      </div>
+                      <a data-testid=" details-driver" class="details-driver" href="/frontend/avis-conducteur.html">
+                      <div class="animated-arrow "> 
+                      </div> 
+                      
+                       </a> 
+                    
+             <hr>
+             
+          <div class="vehicule">
+            <p>Plaque d'immatriculation: AB 581 JH</p>
+            <p>Date 1ére immatriculation: 12\06\2022</p>
+            <p>Marque: Peugeot 3008 - Bleu</p>
+            <p>Nombre de place: 3</p>
+
+          </hr>
+</div>
+             
+<aside>
+  <div class="preferences-conducteur">
+    <div aria-hidden="true" class="trait">
+      <hr class="pref01">
+      <p>Faites connaissance avec Jean</p>
+      <ul>
+      <li>
+        <div class="discussion">
+           <img src="img\agreement_903493.png" alt="discuter" class="discussion">
+          </div>
+          <div class="bull">
+           <p>J'aime bien discuter quand je me sens à l'aise</p>
+          </div>
+       </li>
+       <li>
+        <div class="Animaux">
+          <img src="img\paw_10370528.png" alt="animaux" class="Animaux-photo">
+          <div class="animal">
+          <p>J'adore les animaux. Ouaf!</p>
+        </div>
+        </div>
+       </li>
+
+
+       <li>
+        <div class="Musique">
+          <img src="img\music_13155753.png" alt="musique" class="Musique-photo">
+          <div class="Musique">
+          <p>Musique tout le long!</p>
+        </div>
+        </div>
+       </li>
+       <li>
+        <div class="Passagers">
+          <img src="img\avatar_6419231.png" alt="passagers" class="passagers-photo">
+         <div class="personnes">
+          <p>Max.2 à l'arrière</p>
+         </div>
+        </div>
+       </li>
+
+       <li>
+        <div class="cigarettes-passager">
+       <img src="img\no-smoking_1201706.png" alt="cigarettes" class="cigarettes-photo">
+        
+           <div class="smoking">
+             <p>pas de cigarettes, SVP</p>
+           </div>
+         </div>
+       </li>
+
+     </ul>
+    </div>
+    <hr>
+    <div class="infos">
+      <p>11 trajés publiés</p>
+      <p>Membres depuis décembre 2014</p>
+    </div>
+  </hr>
+  </div>
+</aside>
+        </header> 
+        <script src="https://code.jqueries.com/jqueries-3.2.1.slim.min.js"></script>
+        <script src="scripts/app.js"></script>    
+      </body>
+        <hr>
+        <footer class="footer ">
+        
+            <p>EcoRide@covoiturage.fr</p>
+              <a href="https://blog.EcoRide.fr/about-us/terms-and-condition" target="-blank" class="link">Mentions Legales</a>
+        </footer>
+   
+    </hr>
+</html>

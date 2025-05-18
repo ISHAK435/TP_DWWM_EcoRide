@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1025px)" href="styles-tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body >
+ <div class="overlay | hidden "></div>
+<nav class="nav | ">
+    <a href="index.html"> 
+        <img src="img\electric-vehicle_17165746.png" class="imglogo" alt="logo EcoRide" >
+    </a>
+    <!--hamberguer menu--> 
+    <button class="mobil-open-modal">
+        <span>
+            <img src="img\list_12227852.png" alt="open Menu">
+        </span>
+    </button>
+<!--nav list-->
+<div class="nav-links">
+<ul class="nav-links" id="nav-links">
+<a href="index.html" >Accueil</a>
+  <a href="vue_covoiturages.html" >Covoiturages</a>
+    <a href="contact.html" >Contact</a>
+    <a href="login.html">
+    <button class="button">Connexion</button>
+    </a>
+</ul>
+</div>
+</nav>
+<!--menu-->
+<div class="menu | hidden">
+    <button>
+        <span calss="mobil-close-model">
+            <img src="img\letter-x_5584845.png" alt="Close Menu">
+        </span>
+    </button>
+    <div class="mobile-nav-links">
+<ul class="mobile-nav-links">
+    <a href="index.html" >Accueil</a>
+    <a href="vue_covoiturages.html" >Covoiturages</a>
+    <a href="contact.html" >Contact</a>
+    <a href="login.html">
+    <button class="button">Connexion</button>
+    </a>
+</ul>
+
+</div>
+</div>
+                    <main class="main01">
+                 <div id="container6">
+                    <form action="verification.php" method="POST">
+                        <h1>Connexion</h1>
+                        <label><b>Nom d'utilisateur</b></label>
+                        <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+                        <label><b>Mot de passe</b></label>
+                        <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+                        <input type="submit" id="submit" value="Se connecter"><br>
+
+                        <p>Pas encore de compte ? <a href="création-compte.php">Créer un compte</a></p>
+                    </form>
+               
+          </main>
+
+        
+<hr>
+        <footer class="footer ">
+        
+            <p>EcoRide@covoiturage.fr</p>
+              <a href="https://blog.EcoRide.fr/about-us/terms-and-condition" target="-blank" class="link">Mentions Legales</a>
+        </footer>
+</hr>
+<script src="https://code.jqueries.com/jqueries-3.2.1.slim.min.js"></script>
+<script src = "scripts/app.js"></script>
+</body>
+</html>

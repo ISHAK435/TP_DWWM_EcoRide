@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1025px)" href="styles-tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body >
+   
+        
+    <div class="overlay | hidden"></div>
+    <nav class="nav |  ">
+        <a href="index.html"> <img src="img\electric-vehicle_17165746.png" class="imglogo" alt="logo EcoRide" >
+        </a> 
+        </button>
+                <ul class="nav-links" id="nav-links">
+               <a href="index.html" >Accueil</a>
+              <a href="vue_covoiturages.html" >Covoiturages</a>
+              <a href="contact.html" >Contact</a>
+              <a href="login.html">
+                <button class="button">Connexion</button>
+                  </a>
+            </ul>
+            </nav>
+        
+           <header>
+                    
+                  <main class="main01">
+                        <div class="container1">
+                            <h1>Nous contacter</h1>
+                            <form action="/backend/ajouter_employe.php" method="post">
+                            <label for="name">Nom & prénom</label>
+                            <input type="text" id="fname" name="fiestname" placeholder="votre nom et prénom">
+                            <label for="sujet">Sujet</label>
+                            <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+                            <label for="emailAddress">Email</label>
+                            <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+                            <label for="subject">Message</label>
+                            <textarea id="subject" name="subject" placeholder="Votre message" class="message-box"></textarea>
+                            <button type="submit">Envoyer</button>
+                            </form>
+                        </div>
+                    </main>    
+               
+               
+</div>
+</header>
+
+<script src="https://code.jqueries.com/jqueries-3.2.1.slim.min.js"></script>
+<script src = "scripts/app.js"></script>
+</body>
+<hr>
+        <footer class="footer ">
+        
+            <p>EcoRide@covoiturage.fr</p>
+              <a href="https://blog.EcoRide.fr/about-us/terms-and-condition" target="-blank" class="link">Mentions Legales</a>
+        </footer>
+</hr>
+</html>

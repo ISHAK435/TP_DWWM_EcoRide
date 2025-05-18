@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>avis-conducteur</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1025px)" href="styles-tablet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+
+      
+        <div class="overlay | hidden "></div>
+<nav class="nav | ">
+    <a href="index.html"> 
+        <img src="img\electric-vehicle_17165746.png" class="imglogo" alt="logo EcoRide" >
+    </a>
+    <!--hamberguer menu--> 
+    <button class="mobil-open-modal">
+        <span>
+            <img src="img\list_12227852.png" alt="open Menu">
+        </span>
+    </button>
+<!--nav list-->
+<div class="nav-links">
+<ul class="nav-links" id="nav-links">
+<a href="index.html" >Accueil</a>
+  <a href="vue_covoiturages.html" >Covoiturages</a>
+    <a href="contact.html" >Contact</a>
+    <a href="login.html">
+    <button class="button">Connexion</button>
+    </a>
+
+
+ <div class="menu_button">
+<button id="menu-toggle" class="menu-button">☰</button>
+    <nav id="menu2" class="menu2">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="vue_covoiturages.html">Covoiturages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Connexion</a></li>
+        <li>
+        <form action="verification.php" method="post">
+        <a href="login.html">Déconnecter</a></li>
+        </form>
+      </ul>
+    </nav>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu2");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("open");
+  });
+});
+
+</script>
+
+
+</ul>
+</div>
+</nav>
+<!--menu-->
+<div class="menu | hidden">
+    <button>
+        <span calss="mobil-close-model">
+            <img src="img\letter-x_5584845.png" alt="Close Menu">
+        </span>
+    </button>
+    <div class="mobile-nav-links">
+<ul class="mobile-nav-links">
+    <a href="index.html" >Accueil</a>
+    <a href="vue_covoiturages.html" >Covoiturages</a>
+    <a href="contact.html" >Contact</a>
+    <a href="login.html">
+    <button class="button">Connexion</button>
+    </a>
+</ul>
+
+</div>
+</div>
+                <header> 
+
+          <div  class="avis-conducteur">
+
+        <div class="info-avis" >
+            
+              <h1 class="views">Avis</h1>
+    
+            <span class="note-views">4,8/5</span>
+            <span class="number-view">5 avis</span>
+          </div>
+          
+         <hr>
+         <ul>
+          <li>
+            <div class="Excellent">
+           <p>Excellent  5</p>
+          </div>
+          </li>
+          <li>
+            <div class="Bien">
+           <p>Bien 0</p>
+          </div>
+          </li>
+          <li>
+            <div class="Correct">
+           <p>Correct 0 </p>
+          </div>
+          </li>
+          <li>
+            <div class="Decevant">
+           <p>Décevant 0 </p>
+          </div>
+          </li>
+          <li>
+            <div class="T-decevant">
+           <p>Très-décevant 0 </p>
+          </div>
+          </li>
+        </ul>
+        </hr>
+      </div>
+   
+   
+  
+<ul class="reviews-list">
+  
+  <li itemprop="review" itemscope itemtype="http://schema.org/Review">
+   
+      <span class="blocA01">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="passagerA01" data-testid="superdriver-mask">
+         
+        </svg>
+        <rect width="48" height="48" fill="white"></rect>
+        <img class="photo-passagerA01" src="img\user_18585978.png" alt="photo de profil publique de Laurent" data-testid="single-logo">
+        <img src="img\shield_11735080.png" alt="photo de profil" class="profilPass-vérifier">
+    
+        <span class="A01">
+        <p class="Nom-passager">Laurent</p>
+        <div class="arrow" >
+          <a href="profil-passagerA01.html">
+          <img src="img/arrows_10125281.png" >
+        </a>
+        </div>
+      </span>
+      </span>
+      </li>
+      <blockquote class="Avis-passager">
+        <div class="AvisNote">
+          <meta itemprop="reviewRating" content="4.8">
+          <meta itemprop="author" content="Laurent">
+          <p class="note-passager">4.8 Excellent</p>
+          <p class="commentaire-passager">Trajet parfait, Jean est très agréable, très arrangeant et réactif. Un grand merci!</p>
+          <div class="Time">
+            <time datetime="2025-01-20T10:36" class="pub-time">Janv.2025</time>
+            
+          </div>
+      </blockquote>
+      <li itemprop="review" itemscope itemtype="http://schema.org/Review">
+   
+        <span class="blocA01">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="passagerA01" data-testid="superdriver-mask">
+           
+          </svg>
+          <rect width="48" height="48" fill="white"></rect>
+          <img class="photo-passagerA01" src="img\user_18585978.png" alt="photo de profil publique de Laurent" data-testid="single-logo">
+          <img src="img\shield_11735080.png" alt="photo de profil" class="profilPass-vérifier">
+      
+          <span class="A02">
+          <p class="Nom-passager">Sebastien</p>
+          <div class="arrow" >
+            <a href="profil-passagerA02.html">
+            <img src="img/arrows_10125281.png" >
+          </a>
+          </div>
+        </span>
+        </span>
+        </li>
+        <blockquote class="Avis-passager">
+          <div class="AvisNote">
+            <meta itemprop="reviewRating" content="4.8">
+            <meta itemprop="author" content="Laurent">
+            <p class="note-passager">4.8 Excellent</p>
+            <p class="commentaire-passager">J'ai voyagé avec Jean via EcoRide, et c'était une excellente experience, ponctuel, sympatique et très professionnel! il a rendu le trajet agréable et détendu.
+             La voiture était confortable et propre, et la conversation intéressante. Je recommande vivement Jean pour un voyage en toute confiance! 
+            </p>
+            <div class="Time">
+              <time datetime="2025-02-16T17:53" class="pub-time">Févr.2025</time>
+              
+            </div>
+        </blockquote>
+
+        <li itemprop="review" itemscope itemtype="http://schema.org/Review">
+   
+          <span class="blocA01">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="passagerA01" data-testid="superdriver-mask">
+             
+            </svg>
+            <rect width="48" height="48" fill="white"></rect>
+            <img class="photo-passagerA01" src="img\user_18585978.png" alt="photo de profil publique de Laurent" data-testid="single-logo">
+            <img src="img\shield_11735080.png" alt="photo de profil" class="profilPass-vérifier">
+        
+            <span class="A03">
+            <p class="Nom-passager">Marine</p>
+            <div class="arrow" >
+              <a href="profil-passagerA03.html">
+              <img src="img/arrows_10125281.png" >
+            </a>
+            </div>
+          </span>
+          </span>
+          </li>
+          <blockquote class="Avis-passager">
+            <div class="AvisNote">
+              <meta itemprop="reviewRating" content="5,0">
+              <meta itemprop="author" content="Laurent">
+              <p class="note-passager">5,0 Excellent</p>
+              <p class="commentaire-passager">Merci pour ce trajet agréable, Jean est un conducteur très professionnel et sympathique. Je recommande vivement!</p>
+              </p>
+              <div class="Time">
+                <time datetime="2025-02-28T21:05" class="pub-time">Févr.2025</time>
+                
+              </div>
+          </blockquote>
+
+          <li itemprop="review" itemscope itemtype="http://schema.org/Review">
+   
+            <span class="blocA01">
+              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="passagerA01" data-testid="superdriver-mask">
+               
+              </svg>
+              <rect width="48" height="48" fill="white"></rect>
+              <img class="photo-passagerA01" src="img\user_18585978.png" alt="photo de profil publique de Laurent" data-testid="single-logo">
+              <img src="img\shield_11735080.png" alt="photo de profil" class="profilPass-vérifier">
+          
+              <span class="A04">
+              <p class="Nom-passager">Candice</p>
+              <div class="arrow" >
+                <a href="profil-passagerA04.html">
+                <img src="img/arrows_10125281.png" >
+              </a>
+              </div>
+            </span>
+            </span>
+            </li>
+            <blockquote class="Avis-passager">
+              <div class="AvisNote">
+                <meta itemprop="reviewRating" content="4.8">
+                <meta itemprop="author" content="Laurent">
+                <p class="note-passager">5,0 Excellent</p>
+                <p class="commentaire-passager">Trajet très bien passé avec Jean. ponctuel et très bonne conduite! Je recommande! 
+                </p>
+                <div class="Time">
+                  <time datetime="2025-03-09T18:06" class="pub-time">Mars 2025</time>
+                  
+                </div>
+            </blockquote>
+
+            <li itemprop="review" itemscope itemtype="http://schema.org/Review">
+   
+              <span class="blocA01">
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="passagerA01" data-testid="superdriver-mask">
+                 
+                </svg>
+                <rect width="48" height="48" fill="white"></rect>
+                <img class="photo-passagerA01" src="img\user_18585978.png" alt="photo de profil publique de Laurent" data-testid="single-logo">
+                <img src="img\shield_11735080.png" alt="photo de profil" class="profilPass-vérifier">
+            
+                <span class="A05">
+                <p class="Nom-passager">Laurine</p>
+                <div class="arrow" >
+                  <a href="profil-passagerA05.html">
+                  <img src="img/arrows_10125281.png" >
+                </a>
+                </div>
+              </span>
+              </span>
+              </li>
+              <blockquote class="Avis-passager">
+                <div class="AvisNote">
+                  <meta itemprop="reviewRating" content="4.8">
+                  <meta itemprop="author" content="Laurent">
+                  <p class="note-passager">4.8 Excellent</p>
+                  <p class="commentaire-passager">Excellent trajet avec de la bonne humeur, Jean a une conduite exemplaire et des discusions très intéressantes.
+                  </p>
+                  <div class="Time">
+                    <time datetime="2025-02-16T17:53" class="pub-time">Mars 2025</time>
+                    
+                  </div>
+              </blockquote>
+
+</ul>
+
+</header>
+       
+       <script src="https://code.jqueries.com/jqueries-3.2.1.slim.min.js"></script>
+       <script src="scripts/app.js"></script> 
+    </body>
+    <hr>
+    <footer class="footer ">
+    
+        
+          <p>EcoRide@covoiturage.fr</p>
+          <a href="https://blog.EcoRide.fr/about-us/terms-and-condition" target="-blank" class="link">Mentions Legales</a>
+    </footer>
+
+</hr>
+
+</html>
